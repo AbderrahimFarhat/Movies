@@ -1,38 +1,46 @@
-nav{
+
+.navbar-brand p{
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #000066;
+
+}
+.navbar-brand p span{
+    color:#b30047;
+    font-size: 32px;
+    font-family: serif;
+    font-weight: bold;
+}
+.mycontainer img{
+    height: 40vh;
+    background-position: center center;
+}
+.nav-link{
+    background-color: transparent;
+    margin: 0 5px 0 5px;
+    font-weight: bold;
+}
+.nav-link:hover{
+    border-bottom: 2px solid #00004d;
+}
+.mydiv{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 22px;
+    justify-content: space-between;
+    margin-top: 40px;
 }
-nav>p>span{
-    font-size: 30px;
-    color: maroon;
+.mydiv section{
+    width: 75%;
 }
-nav a{
-    color: black;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
-    padding: 5px;
-    margin: 2px;
-    border-radius: 10px 0 0 10px;
-    text-decoration: none;
+.mydiv aside{
+    width: 25%;
+    text-align: center;
+    padding: 10px 0 10px 0;
 }
-nav a:hover{
-    background-color: black;
-    color: blanchedalmond;
+.mybtn{
+    width: 140px;
+    margin: 10px;
 }
-nav>form>input{
-    height: 20px;
-    padding: 5px;
-    margin: 0px;
-    font-size: 18px;
-}
-nav>form>button{
-    height: 33px;
-    margin-left:-6px;
-    background-color: white;
-}
-nav>form>button>i{
-    font-size: 18px;
+.Myarticles{
+    border: 1px solid black;
 }
 
