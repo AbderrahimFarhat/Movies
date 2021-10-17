@@ -11,22 +11,11 @@
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 <body>
-    <header>
-        <nav>
-            <p>A<span>BY</span>F<span>__</span>Films</p>
-            <div class="mynav">
-                <a href="home">Home</a>
-                <a href="home">Who Are We</a>
-                <a href="home">Contact Us</a>
-            </div>
-            <form action="">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-            </form>
-        </nav>
-        <hr>
-    </header>
+    <x-nav_bar />
+
     @yield('content')
+
+
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
