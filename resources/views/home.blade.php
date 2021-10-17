@@ -1,28 +1,232 @@
 @extends('layouts.app')
 @section('content')
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid ">
-        <a class="navbar-brand" href="#"><p><span>A</span>BY<span>F</span>ilms</p></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active"  href="#">Contact Us</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link active" href="#">Who We Are</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+{{-- Crousel Images --}}
+<div class="mycontainer">
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="{{ asset('images/image.jpg') }}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('images/image1.jpg') }}" class="d-block w-100" alt="...">
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-</nav>
+</div>
+{{-- films and categories --}}
+<div class="mydiv">
+    <section>
+        <article class="Myarticles">
+            <div class="d-flex justify-content-between">
+                <h3>Action Films</h3>
+                <a class="" href="#">More &rarr;</a>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-3">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+        </article>
+        <article class="Myarticles">
+            <div class="d-flex justify-content-between">
+                <h3>Action Films</h3>
+                <a class="" href="#">More &rarr;</a>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-3">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+        </article>
+        <article class="Myarticles">
+            <div class="d-flex justify-content-between">
+                <h3>Action Films</h3>
+                <a class="" href="#">More &rarr;</a>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-3">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+
+        </article>
+        <article class="Myarticles">
+            <div class="d-flex justify-content-between">
+                <h3>Action Films</h3>
+                <a class="" href="#">More &rarr;</a>
+            </div>
+            <div class="row">
+                <div class="col-12 col-xl-3">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-xl-3 ">
+                    <div class="card" style="width: 15rem;">
+                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+    </section>
+    <aside>
+        <h1>Categories</h1>
+            <div class="row">
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success  mybtn">2021 Films</button></div>
+                <div class="col-12 col-xl-6 "><button type="button" class="btn btn-outline-success mybtn">2020 Films</button></div>
+
+                <!-- Force next columns to break to new line -->
+                <div class="w-100"></div>
+
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Action Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Horror Films</button></div>
+
+                <div class="w-100"></div>
+
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Comedy Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Romance Films</button></div>
+
+                <div class="w-100"></div>
+
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Arabic Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Korean Films</button></div>
+
+                <div class="w-100"></div>
+
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Anime Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Cartoon Films</button></div>
+            </div>
+    </aside>
+</div>
 @endsection
