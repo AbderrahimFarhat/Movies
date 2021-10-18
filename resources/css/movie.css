@@ -5,3 +5,33 @@
     margin: 0 5px;
     font-weight: bold;
 }
+
+/* main card style */
+.my-card{
+    overflow: hidden;
+}
+.my-card img{
+    width: 100%;
+}
+.my-card:hover img{
+   filter:brightness(50%) ;
+   transition: all ease-in .2s;
+}
+.my-card:hover .description{
+    bottom: 20px;
+    width: 100%;
+}
+.my-card .description{
+    position: absolute;
+    bottom: -200px;
+    color: #fff;
+    padding: .4rem;
+    text-align: center;
+    transition: all ease-in .2s;
+}
+
+/* episodes style */
+.episodes{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
