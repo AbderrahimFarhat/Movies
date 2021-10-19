@@ -17,45 +17,37 @@ background-color: black;
     color: white;
 
 }
-.navbar-brand p span{
-    color:#b30047;
-    font-size: 32px;
-    font-family: serif;
-    font-weight: bold;
-}
-.nav-link{
-    background-color: transparent;
-    margin: 0 5px 0 5px;
-    font-weight: bold;
-    color: white;
-}
-.nav-link:hover{
-    color: white;
-    border-bottom: 2px solid white;
-}
 
 /* styles of welcoming */
 .welcoming{
-    text-align: center;
-    margin: 10px;
-    margin-bottom: 40px;
-    padding: 30px;
-    border: 1px solid goldenrod;
-    border-radius: 20px;
+    display: flex;
+    padding: 50px 0;
 }
-.welcoming h3{
-    font-size: 40px;
+.welcoming .navBrand,.welcoming .navBrand:hover{
+    color: #fff;
 }
-.welcoming h3 span{
+.welcoming .navBrand span{
     color:#b30047;
-    font-size: 52px;
     font-family: serif;
     font-weight: bold;
+}
+.welcoming .title{
+    flex-grow: 2;
+    display: flex;
+    justify-content: center;
+
+}
+.welcoming h3{
+    display: inline-block;
+    margin: auto;
+}
+.welcoming h3 span{
+    color: #b30047;
 }
 
 /* styles of Crousel */
 .mycontainer img{
-    height: 40vh;
+    height: 400px;
     background-position: center center;
 }
 

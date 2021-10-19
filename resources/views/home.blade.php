@@ -1,7 +1,14 @@
 @extends('layouts.app')
 @section('content')
 <div class="welcoming">
-    <h3><span>Wel</span>come <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
+    <a class="navbar-brand navBrand" href="#"><span>A</span>by<span>F</span>ilms</a>
+    <div class="title">
+        <h3><span>Wel</span>come <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
+    </div>
+    <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn btn-outline-danger" type="submit">Search</button>
+    </form>
 </div>
 {{-- Crousel Images --}}
 <div class="mycontainer">
@@ -26,10 +33,6 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-</div>
-{{-- click films --}}
-<div class="clickfilms">
-    <h4> <span>I</span>f <span>Y</span>ou <span>L</span>ike <span>I</span>t <span>T</span>hen <span>C</span>lick <span>I</span>t</h4>
 </div>
 {{-- films and categories --}}
 <div class="mydiv">
