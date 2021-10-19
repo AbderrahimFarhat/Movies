@@ -1,16 +1,7 @@
-.actors p{
-    margin: 0;
-}
-.actors span{
-    margin: 0 5px;
-    font-weight: bold;
-}
-
 /* main card style */
 .my-card{
     overflow: hidden;
     cursor: pointer;
-    height: 250px;
 }
 .my-card img{
     width: 100%;
@@ -26,12 +17,58 @@
 }
 .my-card .description{
     position: absolute;
-    bottom: -200px;
+    bottom: -150px;
     color: #fff;
     padding: .4rem;
     text-align: center;
     transition: all ease-in .2s;
 }
+
+/* actors style */
+.actors ul{
+    height: 200px;
+    padding: 10px 0;
+    overflow-y: scroll;
+    border: 2px solid #243;
+}
+.actors ul>h5{
+    border-bottom: 1px solid #fff;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    margin: 0 0;
+}
+.actors ul>li{
+    list-style: none;
+    padding: 2px 0;
+    border-bottom: 1px solid #fff;
+}
+.actors  ul > li > a{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.actors  ul > li > a:hover{
+    filter: brightness(70%);
+}
+.actors  ul > li > a > .img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: darkcyan;
+}
+.actors ul::-webkit-scrollbar{
+    width: 10px;
+}
+.actors ul::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+.actors ul::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #11141e;
+    border-radius: 0;
+}
+
 
 /* episodes style */
 .episodes{
