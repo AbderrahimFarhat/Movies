@@ -59,7 +59,7 @@
     background-color: darkcyan;
 }
 .actors ul::-webkit-scrollbar{
-    width: 10px;
+    width: 5px;
 }
 .actors ul::-webkit-scrollbar-thumb {
     background: #fff;
