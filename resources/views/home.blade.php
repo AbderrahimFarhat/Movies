@@ -1,14 +1,20 @@
 @extends('layouts.app')
 @section('content')
+<div class="welcoming">
+    <h3><span>Wel</span>com <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
+</div>
 {{-- Crousel Images --}}
 <div class="mycontainer">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('images/image.jpg') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('images/Action.jpg') }}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('images/image1.jpg') }}" class="d-block w-100" alt="...">
+                <img src="{{ asset('images/av.jpg') }}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="{{ asset('images/cp.jpg') }}" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -31,40 +37,16 @@
             </div>
             <div class="row">
                 <div class="col-12 col-xl-3">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
         </article>
         <article class="Myarticles">

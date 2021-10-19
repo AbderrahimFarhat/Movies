@@ -9,9 +9,12 @@
 /* main card style */
 .my-card{
     overflow: hidden;
+    cursor: pointer;
+    height: 250px;
 }
 .my-card img{
     width: 100%;
+
 }
 .my-card:hover img{
    filter:brightness(50%) ;
