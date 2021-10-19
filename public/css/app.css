@@ -9,9 +9,12 @@
 /* main card style */
 .my-card{
     overflow: hidden;
+    cursor: pointer;
+    height: 250px;
 }
 .my-card img{
     width: 100%;
+
 }
 .my-card:hover img{
    filter:brightness(50%) ;
@@ -35,10 +38,22 @@
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
 }
+
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+body{
+    background-color: black;
+}
+/* styles of nav bar */
+.navbar{
+background-color: black;
+}
 .navbar-brand p{
     font-size: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #000066;
+    color: white;
 
 }
 .navbar-brand p span{
@@ -47,18 +62,42 @@
     font-family: serif;
     font-weight: bold;
 }
-.mycontainer img{
-    height: 40vh;
-    background-position: center center;
-}
 .nav-link{
     background-color: transparent;
     margin: 0 5px 0 5px;
     font-weight: bold;
+    color: white;
 }
 .nav-link:hover{
-    border-bottom: 2px solid #00004d;
+    color: white;
+    border-bottom: 2px solid white;
 }
+
+/* styles of welcoming */
+.welcoming{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 40px;
+    padding: 30px;
+    border: 1px solid goldenrod;
+    border-radius: 20px;
+}
+.welcoming h3 span{
+    color:#b30047;
+    font-size: 32px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+/* styles of Crousel */
+.mycontainer img{
+    height: 40vh;
+    background-position: center center;
+}
+
+
+
+/* styles of body */
 .mydiv{
     display: flex;
     justify-content: space-between;
@@ -79,3 +118,4 @@
 .Myarticles{
     border: 1px solid black;
 }
+
