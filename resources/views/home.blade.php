@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 <div class="welcoming">
-    <h3><span>Wel</span>com <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
+    <h3><span>Wel</span>come <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
 </div>
 {{-- Crousel Images --}}
 <div class="mycontainer">
@@ -27,12 +27,16 @@
         </button>
     </div>
 </div>
+{{-- click films --}}
+<div class="clickfilms">
+    <h4> <span>I</span>f <span>Y</span>ou <span>L</span>ike <span>I</span>t <span>T</span>hen <span>C</span>lick <span>I</span>t</h4>
+</div>
 {{-- films and categories --}}
 <div class="mydiv">
     <section>
         <article class="Myarticles">
             <div class="d-flex justify-content-between">
-                <h3>Action Films</h3>
+                <h3>Action Films :</h3>
                 <a class="" href="#">More &rarr;</a>
             </div>
             <div class="row">
@@ -51,133 +55,61 @@
         </article>
         <article class="Myarticles">
             <div class="d-flex justify-content-between">
-                <h3>Action Films</h3>
+                <h3>Action Films :</h3>
                 <a class="" href="#">More &rarr;</a>
             </div>
             <div class="row">
                 <div class="col-12 col-xl-3">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
 
         </article>
         <article class="Myarticles">
             <div class="d-flex justify-content-between">
-                <h3>Action Films</h3>
+                <h3>Action Films :</h3>
                 <a class="" href="#">More &rarr;</a>
             </div>
             <div class="row">
                 <div class="col-12 col-xl-3">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
 
         </article>
         <article class="Myarticles">
             <div class="d-flex justify-content-between">
-                <h3>Action Films</h3>
+                <h3>Action Films :</h3>
                 <a class="" href="#">More &rarr;</a>
             </div>
             <div class="row">
                 <div class="col-12 col-xl-3">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
                 <div class="col-12 col-xl-3 ">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ asset('images/image1.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-
-                        </div>
-                    </div>
+                    <x-movie-main-card />
                 </div>
             </article>
 
@@ -185,29 +117,29 @@
     <aside>
         <h1>Categories</h1>
             <div class="row">
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success  mybtn">2021 Films</button></div>
-                <div class="col-12 col-xl-6 "><button type="button" class="btn btn-outline-success mybtn">2020 Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info  mybtn">2021 Films</button></div>
+                <div class="col-12 col-xl-6 "><button type="button" class="btn btn-outline-info mybtn">2020 Films</button></div>
 
                 <!-- Force next columns to break to new line -->
                 <div class="w-100"></div>
 
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Action Films</button></div>
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Horror Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Action Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Horror Films</button></div>
 
                 <div class="w-100"></div>
 
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Comedy Films</button></div>
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Romance Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Comedy Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Romance Films</button></div>
 
                 <div class="w-100"></div>
 
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Arabic Films</button></div>
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Korean Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Arabic Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Korean Films</button></div>
 
                 <div class="w-100"></div>
 
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Anime Films</button></div>
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-success mybtn">Cartoon Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Anime Films</button></div>
+                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Cartoon Films</button></div>
             </div>
     </aside>
 </div>
