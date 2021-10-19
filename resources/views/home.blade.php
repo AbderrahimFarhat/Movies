@@ -35,115 +35,117 @@
     </div>
 </div>
 {{-- films and categories --}}
-<div class="mydiv">
-    <section>
-        <article class="Myarticles">
-            <div class="d-flex justify-content-between">
-                <h3>Action Films :</h3>
-                <a class="" href="#">More &rarr;</a>
-            </div>
-            <div class="row">
-                <div class="col-12 col-xl-3">
-                    <x-movie-main-card />
+<div class="container">
+    <div class="mydiv">
+        <section>
+            <article class="Myarticles">
+                <div class="d-flex justify-content-between">
+                    <h3>Action Films :</h3>
+                    <a class="" href="#">More &rarr;</a>
                 </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-        </article>
-        <article class="Myarticles">
-            <div class="d-flex justify-content-between">
-                <h3>Action Films :</h3>
-                <a class="" href="#">More &rarr;</a>
-            </div>
-            <div class="row">
-                <div class="col-12 col-xl-3">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-
-        </article>
-        <article class="Myarticles">
-            <div class="d-flex justify-content-between">
-                <h3>Action Films :</h3>
-                <a class="" href="#">More &rarr;</a>
-            </div>
-            <div class="row">
-                <div class="col-12 col-xl-3">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-
-        </article>
-        <article class="Myarticles">
-            <div class="d-flex justify-content-between">
-                <h3>Action Films :</h3>
-                <a class="" href="#">More &rarr;</a>
-            </div>
-            <div class="row">
-                <div class="col-12 col-xl-3">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
-                <div class="col-12 col-xl-3 ">
-                    <x-movie-main-card />
-                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-3">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
             </article>
-
-    </section>
-    <aside>
-        <h1>Categories</h1>
-            <div class="row">
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info  mybtn">2021 Films</button></div>
-                <div class="col-12 col-xl-6 "><button type="button" class="btn btn-outline-info mybtn">2020 Films</button></div>
-
-                <!-- Force next columns to break to new line -->
-                <div class="w-100"></div>
-
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Action Films</button></div>
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Horror Films</button></div>
-
-                <div class="w-100"></div>
-
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Comedy Films</button></div>
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Romance Films</button></div>
-
-                <div class="w-100"></div>
-
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Arabic Films</button></div>
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Korean Films</button></div>
-
-                <div class="w-100"></div>
-
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Anime Films</button></div>
-                <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Cartoon Films</button></div>
-            </div>
-    </aside>
+            <article class="Myarticles">
+                <div class="d-flex justify-content-between">
+                    <h3>Action Films :</h3>
+                    <a class="" href="#">More &rarr;</a>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-3">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+    
+            </article>
+            <article class="Myarticles">
+                <div class="d-flex justify-content-between">
+                    <h3>Action Films :</h3>
+                    <a class="" href="#">More &rarr;</a>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-3">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+    
+            </article>
+            <article class="Myarticles">
+                <div class="d-flex justify-content-between">
+                    <h3>Action Films :</h3>
+                    <a class="" href="#">More &rarr;</a>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-xl-3">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+                    <div class="col-12 col-xl-3 ">
+                        <x-movie-main-card />
+                    </div>
+                </article>
+    
+        </section>
+        <aside>
+            <h1>Categories</h1>
+                <div class="row">
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info  mybtn">2021 Films</button></div>
+                    <div class="col-12 col-xl-6 "><button type="button" class="btn btn-outline-info mybtn">2020 Films</button></div>
+    
+                    <!-- Force next columns to break to new line -->
+                    <div class="w-100"></div>
+    
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Action Films</button></div>
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Horror Films</button></div>
+    
+                    <div class="w-100"></div>
+    
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Comedy Films</button></div>
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Romance Films</button></div>
+    
+                    <div class="w-100"></div>
+    
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Arabic Films</button></div>
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Korean Films</button></div>
+    
+                    <div class="w-100"></div>
+    
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Anime Films</button></div>
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Cartoon Films</button></div>
+                </div>
+        </aside>
+    </div>
 </div>
 @endsection
