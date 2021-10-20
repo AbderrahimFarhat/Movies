@@ -1,4 +1,4 @@
-<div {{$attributes->merge(['class'=>"card mb-4 bg-dark"])}} style="width:100%">
+<div {{$attributes->merge(['class'=>"card mb-4 movie-card"])}} style="width:100%">
   <div class="row g-0">
     <div class="col-md-4">
       <img src="images/venom.jpg" class="img-fluid rounded-start" alt="image">

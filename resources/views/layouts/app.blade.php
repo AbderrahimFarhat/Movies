@@ -15,11 +15,16 @@
 <body>
     <header>
         {{-- <x-nav_bar /> --}}
-        <x-new_nav />
+        <div class="container">
+            <x-new_nav />
+        </div>
     </header>
     @yield('content')
     
-    
+    <footer>
+        made with &#10084; by  
+        <a class="logo" href="#"><span>A</span>by<span>F</span>ilms</a>
+    </footer>
     <script src="{{asset('js/app.js')}}"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

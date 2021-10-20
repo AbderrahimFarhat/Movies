@@ -1,15 +1,17 @@
+.movie-card{
+    background-color: var(--another-one);
+}
+
 /* main card style */
 .my-card{
     overflow: hidden;
     cursor: pointer;
-    height: 220px;
+    height: 350px;
     margin: 5px;
 }
 .my-card img{
-    width: 100%;
-    height: 100%;
     border: 1px solid black;
-
+    height: 100%;
 }
 .my-card:hover img{
    filter:brightness(50%) ;
