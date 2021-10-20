@@ -1,5 +1,5 @@
 <div {{$attributes->merge(['class'=> "card my-card"])}}>
-    <img src="images/venom.jpg"  alt="...">
+    <img src="images/cp.jpg"  alt="...">
     <div class="description">
         <a href="#" class="card-title d-inline fs-5 text-decoration-none text-white">Venom: Let There Be Carnage</a>
         <span class="text-muted fs-6">2021</span>
