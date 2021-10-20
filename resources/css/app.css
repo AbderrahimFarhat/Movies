@@ -1,37 +1,59 @@
 @import url("movie.css");
+:root{
+	--main-color: #011C26;
+    --secondary-color: #BF877A;
+	--third-color: #0396A6;
+    --another-one:#023059;
+}
 
+/* global seting  */
 *{
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
     font-family:serif;
     color: white;
 }
 body{
-    background-color: black;
+    background-color: var(--main-color);
+}
+.section-title{
+    font-size: 24pt;
+    color: var(--third-color);
+    padding: 0;
+    text-transform: uppercase;
+}
+.logo,.logo:hover{
+    color: #fff;
+    font-size: 16pt;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.logo span{
+    color:var(--secondary-color);
+    font-family: serif;
+    font-weight: bold;
 }
 /* styles of nav bar */
-.navbar{
-background-color: black;
+.my-nav{
+    background-color: var(--another-one);
+    padding: 10px 5px;
 }
-.navbar-brand p{
-    font-size: 20px;
+.my-nav ul li a{
+    font-size: 13pt;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-
+    letter-spacing: 2px;
+}
+.my-nav ul li .active{
+    color: red;
 }
 
 /* styles of welcoming */
 .welcoming{
     display: flex;
+    align-items: center;
     padding: 50px 0;
 }
-.welcoming .navBrand,.welcoming .navBrand:hover{
-    color: #fff;
-}
-.welcoming .navBrand span{
-    color:#b30047;
-    font-family: serif;
-    font-weight: bold;
-}
+
 .welcoming .title{
     flex-grow: 2;
     display: flex;
@@ -43,19 +65,101 @@ background-color: black;
     margin: auto;
 }
 .welcoming h3 span{
-    color: #b30047;
+    color: var(--secondary-color);
+}
+.welcoming .btn-search{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+.welcoming .btn-search:hover{
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
 /* styles of Crousel */
 .mycontainer img{
-    height: 400px;
+    max-height: 400px;
     background-position: center center;
 }
 
+/* movies container style */
+.movies{
+    margin-top: 2rem;
+}
+.movies .card-container{
+    display: grid;
+    padding: 20px 10px;
+    grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
+}
 
+.filter{
+    margin-top: 5rem;
+    border-bottom: 2px solid var(--secondary-color);
+}
+.filter .by-film-type > div{
+    padding: 20px 10px;
+}
+.filter .by-film-type > div select{
+    color: var(--main-color);
+    padding: 10px 5px;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 14pt;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.filter .by-film-type > div select option{
+    font-size: 12pt;
+    color: var(--main-color);
 
+}
+.filter .by-public a{
+    width: 100px;
+    text-decoration: none;
+    font-size: 15pt;
+    text-align: center;
+}
+.filter .by-public a:hover span{
+    color :var(--secondary-color);
+    font-weight: bold;
+}
+.filter .by-public a img{
+    width: 100%;
+}
+
+.pagination{
+    margin-top: 2rem;
+}
+.pagination ul{
+    display: flex;
+    margin: auto;
+}
+.pagination ul li{
+    list-style: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 1px solid var(--secondary-color);
+}
+.pagination ul li a{
+    text-decoration: none;
+    font-size: 14pt;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.pagination ul li:hover,.pagination ul .active{
+    background-color: var(--secondary-color);
+}
+.pagination ul li:hover a,.pagination ul .active a{
+    color: #fff;
+}
+footer{
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
 /* styles of body */
-.mydiv{
+/* .mydiv{
     display: flex;
     margin: 0;
     margin-top: 40px;
@@ -80,5 +184,5 @@ background-color: black;
 .Myarticles div a:hover{
     color:rgba(102, 0, 0,0.7);
 
-}
+} */
 
