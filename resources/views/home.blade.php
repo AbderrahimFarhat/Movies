@@ -34,13 +34,13 @@
         </button>
     </div>
 </div>
-{{-- films and categories --}}
+{{--   and categories --}}
 <div class="container">
     <div class="mydiv">
         <section>
             <article class="Myarticles">
                 <div class="d-flex justify-content-between">
-                    <h3>Action Films :</h3>
+                    <h3>Action   :</h3>
                     <a class="" href="#">More &rarr;</a>
                 </div>
                 <div class="row">
@@ -59,7 +59,7 @@
             </article>
             <article class="Myarticles">
                 <div class="d-flex justify-content-between">
-                    <h3>Action Films :</h3>
+                    <h3>Action   :</h3>
                     <a class="" href="#">More &rarr;</a>
                 </div>
                 <div class="row">
@@ -75,11 +75,11 @@
                     <div class="col-12 col-xl-3 ">
                         <x-movie-main-card />
                     </div>
-    
+
             </article>
             <article class="Myarticles">
                 <div class="d-flex justify-content-between">
-                    <h3>Action Films :</h3>
+                    <h3>Action   :</h3>
                     <a class="" href="#">More &rarr;</a>
                 </div>
                 <div class="row">
@@ -95,11 +95,11 @@
                     <div class="col-12 col-xl-3 ">
                         <x-movie-main-card />
                     </div>
-    
+
             </article>
             <article class="Myarticles">
                 <div class="d-flex justify-content-between">
-                    <h3>Action Films :</h3>
+                    <h3>Action   :</h3>
                     <a class="" href="#">More &rarr;</a>
                 </div>
                 <div class="row">
@@ -116,36 +116,36 @@
                         <x-movie-main-card />
                     </div>
                 </article>
-    
+
         </section>
-        <aside>
-            <h1>Categories</h1>
+        {{-- <aside>
+            <h4> More Categories</h4>
                 <div class="row">
-                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info  mybtn">2021 Films</button></div>
-                    <div class="col-12 col-xl-6 "><button type="button" class="btn btn-outline-info mybtn">2020 Films</button></div>
-    
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info  mybtn">2021  </button></div>
+                    <div class="col-12 col-xl-6 "><button type="button" class="btn btn-outline-info mybtn">2020  </button></div>
+
                     <!-- Force next columns to break to new line -->
                     <div class="w-100"></div>
-    
-                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Action Films</button></div>
-                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Horror Films</button></div>
-    
+
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Action  </button></div>
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Horror  </button></div>
+
                     <div class="w-100"></div>
-    
-                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Comedy Films</button></div>
-                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Romance Films</button></div>
-    
+
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Comedy  </button></div>
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Romance  </button></div>
+
                     <div class="w-100"></div>
-    
-                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Arabic Films</button></div>
-                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Korean Films</button></div>
-    
+
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Arabic  </button></div>
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Korean  </button></div>
+
                     <div class="w-100"></div>
-    
-                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Anime Films</button></div>
-                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Cartoon Films</button></div>
+
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Anime  </button></div>
+                    <div class="col-12 col-xl-6"><button type="button" class="btn btn-outline-info mybtn">Cartoon  </button></div>
                 </div>
-        </aside>
+        </aside> --}}
     </div>
 </div>
 @endsection

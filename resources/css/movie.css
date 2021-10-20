@@ -2,7 +2,7 @@
 .my-card{
     overflow: hidden;
     cursor: pointer;
-    height: 200px;
+    height: 220px;
     margin: 5px;
 }
 .my-card img{
