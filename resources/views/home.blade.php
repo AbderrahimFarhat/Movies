@@ -4,7 +4,7 @@
     <div class="welcoming">
         <a class="logo" href="#"><span>A</span>by<span>F</span>ilms</a>
         <div class="title">
-            <h3 class="logo"><span>Wel</span>come <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
+            <h3><span>Wel</span>come <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
         </div>
         <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

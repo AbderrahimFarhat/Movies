@@ -6,7 +6,7 @@
 .my-card{
     overflow: hidden;
     cursor: pointer;
-    height: 350px;
+    height: 300px;
     margin: 5px;
 }
 .my-card img{
@@ -110,6 +110,7 @@ body{
     text-decoration: none;
     margin: 0;
     padding: 0;
+    font-size: 34pt;
 }
 .logo span{
     color:var(--secondary-color);
@@ -172,7 +173,7 @@ body{
 .movies .card-container{
     display: grid;
     padding: 20px 10px;
-    grid-template-columns: repeat(auto-fill,minmax(225px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
 }
 
 .filter{
@@ -197,9 +198,9 @@ body{
 
 }
 .filter .by-public a{
-    width: 100px;
+    width: 80px;
     text-decoration: none;
-    font-size: 15pt;
+    font-size: 12pt;
     text-align: center;
 }
 .filter .by-public a:hover span{
@@ -240,6 +241,12 @@ footer{
     display: flex;
     align-items: flex-end;
     justify-content: center;
+}
+footer .logo,footer .logo:hover{
+    font-size: 15pt;
+    display: inline-block;
+    margin-left: 5px;
+    padding: 0;
 }
 /* styles of body */
 /* .mydiv{

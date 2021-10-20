@@ -15,14 +15,16 @@
 <body>
     <header>
         {{-- <x-nav_bar /> --}}
-        <div class="container">
-            <x-new_nav />
+        <div class="container-fluide my-nav">
+            <div class="container">
+                <x-new_nav /> 
+            </div>
         </div>
     </header>
     @yield('content')
     
     <footer>
-        made with &#10084; by  
+        <span>made with ❤️ by </span>  
         <a class="logo" href="#"><span>A</span>by<span>F</span>ilms</a>
     </footer>
     <script src="{{asset('js/app.js')}}"></script>
