@@ -52,7 +52,6 @@ body{
 .welcoming{
     display: flex;
     align-items: center;
-    padding: 50px 0;
 }
 
 .welcoming .title{
