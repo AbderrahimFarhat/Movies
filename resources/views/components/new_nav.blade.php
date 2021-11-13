@@ -15,7 +15,7 @@
       <div class="collapse navbar-collapse fs-6 order-lg-2" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 text-center">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="Movies" role="button" data-bs-toggle="dropdown" aria-expanded="false">

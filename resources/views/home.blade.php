@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+
 <div class="container">
     <div class="welcoming">
         <a class="logo" href="#"><span>A</span>by<span>F</span>ilms</a>
@@ -82,29 +83,18 @@
     <div class="movies">
         <h5 class="section-title">Latest Movies</h5>
         <div class="card-container">
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
-            <x-movie-main-card />
+            {{-- {{ddd($movies)}} --}}
+            @foreach ($movies as $movie)
+                <x-movie-main-card :movie="$movie" />
+            @endforeach
+           
         </div>
     </div>
     <div class="pagination">
         <ul>
-            <li class="active"><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
-            <li><a href="#">4</a></li>
-            <li><a href="#">5</a></li>
-            
+            @for ($i = 1; $i <= 5; $i++)
+                <li class={{($i==$page)?'active':''}}><a href="/?page={{$i}}">{{$i}}</a></li>
+            @endfor
         </ul>
     </div>
 </div>

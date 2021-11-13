@@ -1,6 +1,9 @@
 <?php
 
+
 use Illuminate\Support\Facades\Route;
+use App\Models\movies;
+use PhpParser\Node\Stmt\Catch_;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,9 +17,20 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $m = new movies();
+    $page = (request('page') == Null) ? 1 : request('page');
+
+    $movies = $m->getMovies($page);
+    return view('home', array('movies' => $movies, 'page' => $page));
 });
 
-Route::get('/movie',function(){
-    return view('movie');
+Route::get('/movie', function () {
+    $m = new movies();
+    if (request('id') != null || request('title') != null) {
+        $movie = $m->getMovieById(request('id'));
+        $similarMovies = $m->getSimilareMovie(request('id'));
+        return ($movie == null) ? view('/NotFound') : view('movie', array('movie' => $movie, 'similar' => $similarMovies));
+    } else {
+        return view('/NotFound');
+    }
 });
