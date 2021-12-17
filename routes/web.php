@@ -34,3 +34,10 @@ Route::get('/movie', function () {
         return view('/NotFound');
     }
 });
+Route::get('/category', function () {
+    $m = new movies();
+    $page = (request('page') == Null) ? 1 : request('page');
+
+    $movies = $m->getMoviesByCategory(request('id'),$page);
+    return view('categorie', array('movies' => $movies, 'page' => $page));
+});

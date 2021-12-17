@@ -22,23 +22,12 @@
                 Movies</a>
             <ul class="dropdown-menu" aria-labelledby="Movies">
                 <li><a class="dropdown-item" href="#">Drama</a></li>
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Comedy</a></li>
-                <li><a class="dropdown-item" href="#">Science</a></li>
-                <li><a class="dropdown-item" href="#">Adventures</a></li>
+                <li><a class="dropdown-item" href="/category?id=28">Action</a></li>
+                <li><a class="dropdown-item" href="/category?id=35">Comedy</a></li>
+                <li><a class="dropdown-item" href="/category?id=18">Drama</a></li>
+                <li><a class="dropdown-item" href="/category?id=878">Sci-fi</a></li>
+                <li><a class="dropdown-item" href="/category?id=12">Adventures</a></li>
               </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="Series" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Series
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="Series">
-              <li><a class="dropdown-item" href="#">Drama</a></li>
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Comedy</a></li>
-              <li><a class="dropdown-item" href="#">Science</a></li>
-              <li><a class="dropdown-item" href="#">Adventures</a></li>
-            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" >Other</a>

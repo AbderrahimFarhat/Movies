@@ -43,12 +43,18 @@
         <div class="by-film-type flex-grow-1">
             <h5 class="section-title">Advanced Filter</h5>
             <div>
-                <select name="category">
+                {{-- <select name="category">
                     <option value="cateory" disabled selected>Category</option>
-                    <option value="action">Action</option>
-                    <option value="drama">Drama</option>
-                    <option value="comedy">Comedy</option>
-                    <option value="sci-fi">Sci-fi</option>
+                    <a href="#"><option value="action">Action</option></a>
+                    <option value="drama"><a href="#">Drama</a> </option>
+                    <option value="comedy"><a href="#">Comedy</a></option>
+                    <option value="sci-fi"><a href="#">Sci-fi</a></option>
+                </select> --}}
+                <select name="category" onchange="location = this.value;">
+                    <option value="/category?id=28">Action</option>
+                    <option value="/category?id=18">Drama</option>
+                    <option value="/category?id=35">Comedy</option>
+                    <option value="/category?id=878">Sci-fi</option>
                 </select>
                 <select name="year">
                     <option value="year" disabled selected>Year</option>
@@ -89,7 +95,7 @@
             @endforeach
            
         </div>
-    </div>
+    </div> 
     <div class="pagination">
         <ul>
             @for ($i = 1; $i <= 5; $i++)
