@@ -80,7 +80,7 @@
                 <img src="icons/heart.png" alt="">
                 <span>Most Liked</span>
             </a>
-            <a href="#">
+            <a href="/mostrated">
                 <img src="icons/star.png" alt="">
                 <span>Most Rated</span>
             </a>

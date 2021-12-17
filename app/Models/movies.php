@@ -17,6 +17,11 @@ class movies extends Model
         $response=Http::get('https://api.themoviedb.org/3/discover/movie?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=' . $page . '&with_genres='.$id)['results'];
         return $response;
     }
+    function getMostRatedMovies($page)
+    {
+        $response=Http::get('https://api.themoviedb.org/3/movie/top_rated?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&page='.$page)['results'];
+        return $response;
+    }
     function getMovieByName($name)
     {
         $response = Http::get('https://api.themoviedb.org/3/search/movie?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&query=' . $name . '&page=1&include_adult=false')['results'];

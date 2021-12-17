@@ -41,3 +41,10 @@ Route::get('/category', function () {
     $movies = $m->getMoviesByCategory(request('id'),$page);
     return view('categorie', array('movies' => $movies, 'page' => $page));
 });
+Route::get('/mostrated', function () {
+    $m = new movies();
+    $page = (request('page') == Null) ? 1 : request('page');
+
+    $movies = $m->getMostRatedMovies($page);
+    return view('mostRated', array('movies' => $movies, 'page' => $page));
+});
