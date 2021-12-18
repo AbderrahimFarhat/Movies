@@ -76,7 +76,7 @@
                 <img src="icons/team.png" alt="">
                 <span>Most Views</span>
             </a>
-            <a href="#">
+            <a href="/mostLiked">
                 <img src="icons/heart.png" alt="">
                 <span>Most Liked</span>
             </a>

@@ -48,3 +48,10 @@ Route::get('/mostrated', function () {
     $movies = $m->getMostRatedMovies($page);
     return view('mostRated', array('movies' => $movies, 'page' => $page));
 });
+Route::get('/mostLiked', function () {
+    $m = new movies();
+    $page = (request('page') == Null) ? 1 : request('page');
+
+    $movies = $m->getMostLikedMovies($page);
+    return view('mostLiked', array('movies' => $movies, 'page' => $page));
+});
