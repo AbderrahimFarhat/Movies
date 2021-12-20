@@ -13,18 +13,19 @@ class movies extends Model
         $response = Http::get('https://api.themoviedb.org/3/discover/movie?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=' . $page . '&with_watch_monetization_types=flatrate')['results'];
         return $response;
     }
-    function getMoviesByCategory($id,$page){
-        $response=Http::get('https://api.themoviedb.org/3/discover/movie?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=' . $page . '&with_genres='.$id)['results'];
+    function getMoviesByCategory($id, $page)
+    {
+        $response = Http::get('https://api.themoviedb.org/3/discover/movie?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=' . $page . '&with_genres=' . $id)['results'];
         return $response;
     }
     function getMostRatedMovies($page)
     {
-        $response=Http::get('https://api.themoviedb.org/3/movie/top_rated?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&page='.$page)['results'];
+        $response = Http::get('https://api.themoviedb.org/3/movie/top_rated?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&page=' . $page)['results'];
         return $response;
     }
     function getMostLikedMovies($page)
     {
-        $response=Http::get('https://api.themoviedb.org/3/movie/popular?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&page='.$page)['results'];
+        $response = Http::get('https://api.themoviedb.org/3/movie/popular?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&page=' . $page)['results'];
         return $response;
     }
     function getMovieByName($name)
@@ -41,6 +42,11 @@ class movies extends Model
     {
         $response = Http::get('https://api.themoviedb.org/3/movie/' . $id . '/similar?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US&page=1')['results'];
         return $response;
+    }
+    function getCategoriesName()
+    {
+        $response = Http::get('https://api.themoviedb.org/3/genre/movie/list?api_key=f7811093155c51fea3e2df1050c0fe87&language=en-US');
+        return $response->json();
     }
     use HasFactory;
 }

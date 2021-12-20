@@ -19,7 +19,6 @@ use PhpParser\Node\Stmt\Catch_;
 Route::get('/', function () {
     $m = new movies();
     $page = (request('page') == Null) ? 1 : request('page');
-
     $movies = $m->getMovies($page);
     return view('home', array('movies' => $movies, 'page' => $page));
 });
@@ -37,21 +36,18 @@ Route::get('/movie', function () {
 Route::get('/category', function () {
     $m = new movies();
     $page = (request('page') == Null) ? 1 : request('page');
-
-    $movies = $m->getMoviesByCategory(request('id'),$page);
+    $movies = $m->getMoviesByCategory(request('id'), $page);
     return view('categorie', array('movies' => $movies, 'page' => $page));
 });
 Route::get('/mostrated', function () {
     $m = new movies();
     $page = (request('page') == Null) ? 1 : request('page');
-
     $movies = $m->getMostRatedMovies($page);
     return view('mostRated', array('movies' => $movies, 'page' => $page));
 });
 Route::get('/mostLiked', function () {
     $m = new movies();
     $page = (request('page') == Null) ? 1 : request('page');
-
     $movies = $m->getMostLikedMovies($page);
     return view('mostLiked', array('movies' => $movies, 'page' => $page));
 });
