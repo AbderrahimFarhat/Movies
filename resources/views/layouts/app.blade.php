@@ -15,7 +15,7 @@
         {{-- <x-nav_bar /> --}}
         <div class="container-fluide my-nav">
             <div class="container">
-                <x-new_nav /> 
+                <x-new_nav :categories="$categories"/> 
             </div>
         </div>
     </header>

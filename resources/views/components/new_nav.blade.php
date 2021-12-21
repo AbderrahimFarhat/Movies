@@ -1,3 +1,4 @@
+@props(['categories'])
 <nav class="navbar navbar-expand-lg navbar-dark my-nav">
       <button class="navbar-toggler order-lg-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -37,12 +38,11 @@
             <a class="nav-link dropdown-toggle" href="/category?id=28" id="Movies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Movies</a>
             <ul class="dropdown-menu" aria-labelledby="Movies">
-                <li><a class="dropdown-item" href="/category?id=28">Action</a></li>
-                <li><a class="dropdown-item" href="/category?id=35">Comedy</a></li>
-                <li><a class="dropdown-item" href="/category?id=18">Drama</a></li>
-                <li><a class="dropdown-item" href="/category?id=878">Sci-fi</a></li>
-                <li><a class="dropdown-item" href="/category?id=12">Adventures</a></li>
-            </ul>
+                @foreach ($categories as $category)
+                  <li><a class="dropdown-item" href="/category?id=<?= $category["id"] ?>"><?= $category["name"] ?></a></li>   
+               @endforeach
+                
+              </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" >Other</a>
