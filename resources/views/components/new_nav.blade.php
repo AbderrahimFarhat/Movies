@@ -16,7 +16,7 @@
                 <div class="m-auto">Welcome {{ Auth::user()->name }}</div>
 
                 <a href="{{ route('logout') }}" class="nav-link me-2" onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                            document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
                     {{ csrf_field() }}
                 </form>
@@ -48,5 +48,4 @@
             </li>
         </ul>
     </div>
-
 </nav>
