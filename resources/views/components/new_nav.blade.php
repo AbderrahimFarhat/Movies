@@ -4,12 +4,28 @@
       </button>
       <div class="sign order-lg-3">
         <ul class="navbar-nav flex-row">
-            <li>
-              <a class="nav-link me-2" href="#">sign in</a>
+            {{-- <li>
+              <a class="nav-link me-2" href="/login">sign in</a>
             </li>
             <li>
-                <a class="nav-link" href="#">sign up</a>
-            </li>
+                <a class="nav-link" href="/register">sign up</a>
+            </li> --}}
+            @guest
+            <a class="nav-link me-2" href="{{ route('login') }}">{{ __('Login') }}</a>
+            @if (Route::has('register'))
+                <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+            @endif
+        @else
+            <div class="m-auto">Welcome {{ Auth::user()->name }}</div>
+
+            <a href="{{ route('logout') }}"
+               class="nav-link me-2"
+               onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                {{ csrf_field() }}
+            </form>
+        @endguest
         </ul>
       </div>
       <div class="collapse navbar-collapse fs-6 order-lg-2" id="navbarSupportedContent">
@@ -18,16 +34,15 @@
             <a class="nav-link active" aria-current="page" href="/">Home</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="Movies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="/category?id=28" id="Movies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Movies</a>
             <ul class="dropdown-menu" aria-labelledby="Movies">
-                <li><a class="dropdown-item" href="#">Drama</a></li>
                 <li><a class="dropdown-item" href="/category?id=28">Action</a></li>
                 <li><a class="dropdown-item" href="/category?id=35">Comedy</a></li>
                 <li><a class="dropdown-item" href="/category?id=18">Drama</a></li>
                 <li><a class="dropdown-item" href="/category?id=878">Sci-fi</a></li>
                 <li><a class="dropdown-item" href="/category?id=12">Adventures</a></li>
-              </ul>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#" >Other</a>

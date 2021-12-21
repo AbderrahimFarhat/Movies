@@ -3,6 +3,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Models\movies;
+use Illuminate\Support\Facades\Auth;
 use PhpParser\Node\Stmt\Catch_;
 
 /*
@@ -23,6 +24,7 @@ Route::get('/', function () {
     $movies = $m->getMovies($page);
     return view('home', array('movies' => $movies, 'page' => $page));
 });
+Auth::routes();
 
 Route::get('/movie', function () {
     $m = new movies();
@@ -55,3 +57,7 @@ Route::get('/mostLiked', function () {
     $movies = $m->getMostLikedMovies($page);
     return view('mostLiked', array('movies' => $movies, 'page' => $page));
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
