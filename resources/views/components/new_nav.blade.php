@@ -5,12 +5,6 @@
       </button>
       <div class="sign order-lg-3">
         <ul class="navbar-nav flex-row">
-            {{-- <li>
-              <a class="nav-link me-2" href="/login">sign in</a>
-            </li>
-            <li>
-                <a class="nav-link" href="/register">sign up</a>
-            </li> --}}
             @guest
             <a class="nav-link me-2" href="{{ route('login') }}">{{ __('Login') }}</a>
             @if (Route::has('register'))
@@ -38,6 +32,16 @@
             <a class="nav-link dropdown-toggle" href="/category?id=28" id="Movies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Movies</a>
             <ul class="dropdown-menu" aria-labelledby="Movies">
+                @foreach ($categories as $category)
+                  <li><a class="dropdown-item" href="/category?id=<?= $category["id"] ?>"><?= $category["name"] ?></a></li>   
+               @endforeach
+                
+              </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="/category?id=28" id="Movies" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Movies1</a>
+            <ul class="dropdown-menu" aria-labelledby="Movies1">
                 @foreach ($categories as $category)
                   <li><a class="dropdown-item" href="/category?id=<?= $category["id"] ?>"><?= $category["name"] ?></a></li>   
                @endforeach
