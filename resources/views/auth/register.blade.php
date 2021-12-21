@@ -62,9 +62,9 @@
                             </div>
                         </div>
 
-                        <div class="row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                        <div class="row mb-0 d-flex justify-content-center">
+                            <div class="col-md-6 offset-md-4 ">
+                                <button type="submit" class="btn btn-primary ">
                                     {{ __('Register') }}
                                 </button>
                             </div>
