@@ -7,7 +7,6 @@
             @foreach ($movies as $movie)
                 <x-movie-main-card :movie="$movie" />
             @endforeach
-
         </div>
     </div>
     <div class="pagination">
