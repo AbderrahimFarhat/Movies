@@ -7,8 +7,8 @@
         <div class="title">
             <h3><span>Wel</span>come <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
         </div>
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <form class="d-flex" action="{{ route('search') }}" method="GET">
+            <input class="form-control me-2"  type="text" name="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-search" type="submit">Search</button>
         </form>
     </div>
@@ -43,13 +43,6 @@
         <div class="by-film-type flex-grow-1">
             <h5 class="section-title">Advanced Filter</h5>
             <div>
-                {{-- <select name="category">
-                    <option value="cateory" disabled selected>Category</option>
-                    <a href="#"><option value="action">Action</option></a>
-                    <option value="drama"><a href="#">Drama</a> </option>
-                    <option value="comedy"><a href="#">Comedy</a></option>
-                    <option value="sci-fi"><a href="#">Sci-fi</a></option>
-                </select> --}}
                 <select name="category" onchange="location = this.value;">
                     <option value="/category?id=28">Action</option>
                     <option value="/category?id=18">Drama</option>

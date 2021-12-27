@@ -1,6 +1,6 @@
 <?php
 
-
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Models\movies;
 use Illuminate\Support\Facades\Auth;
@@ -17,43 +17,11 @@ use PhpParser\Node\Stmt\Catch_;
 |
 */
 
-Route::get('/', function () {
-    $m = new movies();
-    $page = (request('page') == Null) ? 1 : request('page');
-    $movies = $m->getMovies($page);
-    return view('home', array('movies' => $movies, 'page' => $page));
-});
+Route::get('/',[HomeController::class,'home'])->name('home');
+Route::get('/search',[HomeController::class,'search'])->name('search');
+Route::get('/movie',[HomeController::class,'movie'])->name('movie');
+Route::get('/category',[HomeController::class,'category'])->name('category');
+Route::get('/mostrated',[HomeController::class,'mostrated'])->name('mostrated');
+Route::get('/mostLiked',[HomeController::class,'mostLiked'])->name('mostLiked');
 Auth::routes();
 
-Route::get('/movie', function () {
-    $m = new movies();
-    if (request('id') != null || request('title') != null) {
-        $movie = $m->getMovieById(request('id'));
-        $similarMovies = $m->getSimilareMovie(request('id'));
-        return ($movie == null) ? view('/NotFound') : view('movie', array('movie' => $movie, 'similar' => $similarMovies));
-    } else {
-        return view('/NotFound');
-    }
-});
-Route::get('/category', function () {
-    $m = new movies();
-    $page = (request('page') == Null) ? 1 : request('page');
-    $movies = $m->getMoviesByCategory(request('id'), $page);
-    return view('categorie', array('movies' => $movies, 'page' => $page));
-});
-Route::get('/mostrated', function () {
-    $m = new movies();
-    $page = (request('page') == Null) ? 1 : request('page');
-    $movies = $m->getMostRatedMovies($page);
-    return view('mostRated', array('movies' => $movies, 'page' => $page));
-});
-Route::get('/mostLiked', function () {
-    $m = new movies();
-    $page = (request('page') == Null) ? 1 : request('page');
-    $movies = $m->getMostLikedMovies($page);
-    return view('mostLiked', array('movies' => $movies, 'page' => $page));
-});
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

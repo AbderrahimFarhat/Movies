@@ -25,7 +25,8 @@
         <span>made with ❤️ by </span>  
         <a class="logo" href="#"><span>A</span>by<span>F</span>ilms</a>
     </footer>
+    {{-- <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> --}}
     <script src="{{asset('js/app.js')}}"></script>
-    <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -21,7 +21,7 @@
                 </div>
             </div>
           </div>
-          <button class="btn btn-warning fs-4 fw-bold text-light me-1">Watch Now</button>
+          <button class="btn btn-success btn-sm fs-4 fw-bold text-light me-1">Watch Now &#x25BA;</button>
         </div>
         <p class="">{{$movie['overview']}}</p>
         <div class="actors ">

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\movies;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -21,8 +22,47 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function home()
     {
-        return view('home');
+        $m = new movies();
+        $page = (request('page') == Null) ? 1 : request('page');
+        $movies = $m->getMovies($page);
+        return view('home', array('movies' => $movies, 'page' => $page));
+    }
+    public function movie()
+    {
+        $m = new movies();
+        if (request('id') != null || request('title') != null) {
+            $movie = $m->getMovieById(request('id'));
+            $similarMovies = $m->getSimilareMovie(request('id'));
+            return ($movie == null) ? view('/NotFound') : view('movie', array('movie' => $movie, 'similar' => $similarMovies));
+        } else {
+            return view('/NotFound');
+        }
+    }
+    public function search(Request $request){
+        $search=$request->input('search');
+        $page = (request('page') == Null) ? 1 : request('page');
+        $m= new movies();
+        $movie=$m->getMovieByName($search);
+        return ($movie == null) ? view('/NotFound') : view('search', array('movies' => $movie));
+    }
+    public function category(){
+        $m = new movies();
+        $page = (request('page') == Null) ? 1 : request('page');
+        $movies = $m->getMoviesByCategory(request('id'), $page);
+        return view('categorie', array('movies' => $movies, 'page' => $page));
+    }
+    public function mostrated(){
+        $m = new movies();
+        $page = (request('page') == Null) ? 1 : request('page');
+        $movies = $m->getMostRatedMovies($page);
+        return view('mostRated', array('movies' => $movies, 'page' => $page));
+    }
+    public function mostLiked(){
+        $m = new movies();
+        $page = (request('page') == Null) ? 1 : request('page');
+        $movies = $m->getMostLikedMovies($page);
+        return view('mostLiked', array('movies' => $movies, 'page' => $page));
     }
 }
