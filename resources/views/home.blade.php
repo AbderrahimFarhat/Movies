@@ -7,9 +7,19 @@
         <div class="title">
             <h3><span>Wel</span>come <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
         </div>
+<<<<<<< HEAD
         <form class="d-flex" action="{{ route('search') }}" method="GET">
             <input class="form-control me-2"  type="text" name="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-search" type="submit">Search</button>
+=======
+        <form class="d-flex gap-2" >
+            <div class="">
+                <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+                <div class="movie-search-holder">
+                </div>
+            </div>
+            <button class="btn btn-search align-self-baseline" type="submit">Search</button>
+>>>>>>> searchComp
         </form>
     </div>
 </div>

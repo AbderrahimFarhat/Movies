@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     {{-- My Style --}}
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <script>
+        
+    </script>
 </head>
 <body>
     <header>
@@ -27,6 +30,11 @@
     </footer>
     {{-- <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script> --}}
     <script src="{{asset('js/app.js')}}"></script>
+<<<<<<< HEAD
 
+=======
+    <script src="{{asset('js/scripts.js')}}"></script>
+    <script type="text/javascript" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+>>>>>>> searchComp
 </body>
 </html>

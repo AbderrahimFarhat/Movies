@@ -169,6 +169,26 @@ body {
     max-height: 400px;
     background-position: center center;
 }
+/* movies search styles   */
+.movie-search {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+.movie-search-holder {
+    background-color: #023059;
+    position: absolute;
+    z-index: 3;
+}
+.movie-search:hover {
+    background-color: #000d1b;
+}
+.img-search {
+    width: 5rem;
+}
+.img-search-description {
+}
 
 /* movies container style */
 .movies {
