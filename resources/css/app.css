@@ -88,6 +88,7 @@ body {
     justify-content: center;
     padding: 5px;
     margin-bottom: 5px;
+    text-decoration: none;
 }
 .movie-search-holder {
     background-color: #023059;
@@ -98,7 +99,8 @@ body {
     background-color: #000d1b;
 }
 .img-search {
-    width: 5rem;
+    width: 8rem;
+    height: 10rem;
 }
 .img-search-description {
 }
