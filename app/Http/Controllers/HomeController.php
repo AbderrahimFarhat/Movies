@@ -42,10 +42,9 @@ class HomeController extends Controller
     }
     public function search(Request $request){
         $search=$request->input('search');
-        $page = (request('page') == Null) ? 1 : request('page');
         $m= new movies();
-        $movie=$m->getMovieByName($search);
-        return ($movie == null) ? view('/NotFound') : view('search', array('movies' => $movie));
+        $movies=$m->getMovieByName($search);
+        return ($movies == null) ? view('/NotFound') : view('search', array('movies' => $movies));
     }
     public function category(){
         $m = new movies();

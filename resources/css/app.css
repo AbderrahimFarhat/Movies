@@ -85,7 +85,7 @@ body {
 /* movies search styles   */
 .movie-search {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     padding: 5px;
     margin-bottom: 5px;
     text-decoration: none;
@@ -99,8 +99,8 @@ body {
     background-color: #000d1b;
 }
 .img-search {
-    width: 8rem;
-    height: 10rem;
+    width: 3rem;
+    height: 3rem;
 }
 .img-search-description {
 }

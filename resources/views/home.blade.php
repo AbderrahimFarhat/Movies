@@ -7,9 +7,9 @@
         <div class="title">
             <h3><span>Wel</span>come <span>T</span>o <span>T</span>he <span>Ho</span>me <span>O</span>f <span>Mo</span>vies</h3>
         </div>
-        <form class="d-flex gap-2" >
+        <form class="d-flex gap-2" action="{{ route('search') }}" method="GET">
             <div id="searshBar">
-                <input class="form-control me-2" id="search-input" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" id="search-input" name="search" autocomplete="off" type="search" placeholder="Search" aria-label="Search" required>
                 <div class="movie-search-holder" id="movie-search-holder">
                 </div>
             </div>

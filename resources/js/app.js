@@ -12,7 +12,7 @@ require('./bootstrap');
    .then(res=>res.json()).then(res=>{
 
       res["results"].map(movie=>{
-         if(i<3){
+         if(i<5){
             i++;
             a = document.createElement("a");
             img = document.createElement("img");
@@ -24,7 +24,7 @@ require('./bootstrap');
       
             a.href = "/movie?title="+movie['title']+"&id="+movie['id'];
             img.src ="https://image.tmdb.org/t/p/w300/"+ movie["poster_path"];
-            p.innerHTML=movie["overview"];
+            p.innerHTML=movie["title"];
    
             a.appendChild(img);
             a.appendChild(p);
